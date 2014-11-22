@@ -21,6 +21,19 @@ var myName = prompt("What is your name, child?")
 	    	}
 	};
 
+var sec = 0;
+function pad ( val ) { return val > 9 ? val : "0" + val; }
+setInterval( function(){
+    document.getElementById("seconds").innerHTML=pad(++sec%60);
+    document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
+}, 1000);
+
+var clicks = 0;
+	function onClick() {
+       clicks += 0.5;
+       document.getElementById("clicks").innerHTML = clicks;
+};
+
 var Memory = (function () {
 	var r = {
 		images: [
