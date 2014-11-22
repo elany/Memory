@@ -7,4 +7,4 @@ See: Issues
 
 ^please^
 
-Still working on including more (randomized) creepy messages.
+Still working on 'auto-resolve the last pair' and including more (randomized) creepy messages.
